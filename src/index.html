@@ -6,9 +6,84 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>ARTISTAS</header>
-    <main></main>
-    <footer></footer>
+    <header>ARTISTAS
+      <!--Este sería el encabezado-->
+    </header><br><br>
+    <!--planeo que este sea el inicio de la página-->
+    <section class="primera" id="primera">
+      <div class="contenedor">
+      </div>
+    </section>
+    <!--planeo que este sea el inicio de la página dos donde se
+    colocará todo lo correspondiente a la tarjeta-->
+    <section class="segunda" id="segunda">
+  
+      <form id="formulario">
+        <fieldset>
+
+              <!--pretendo que la imagen de la tarjeta vaya aqui-->
+         <h2>Finaliza tu compra</h2>
+           <figure class="imagen">
+          <img src="./img/visa.jpg" alt="tarjeta" width="400" height="225">
+         </figure>
+      <!--Aqui se ingresan los datos de la tarjeta-->
+
+          <div class="datos">
+            <label for="number">Nùmero de Tarjeta</label><br>
+            <input type="text" id="number" maxlength="16" autocomplete="off" required>
+          </div> <br><br>
+
+          <div class="datos">
+            <label for="name">Nombre y Apellido</label><br>
+            <input type="text" id="name" autocomplete="off" required>
+          </div><br><br>
+
+          <div class="datos">
+            <label for="CCV">CCV</label><br>
+            <input type="text" id="CCV" maxlength="3">
+          </div><br><br>
+
+          <div class="datos">
+            <label for="fecha de caducidad">Fecha de Caducidad</label><br>
+            <label for="">Mes</label>
+            <select name="mes" id="">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select> 
+
+            <label for="">Año</label>
+            <select name="año" id="">
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+            </select> 
+                           
+          </div><br><br>
+
+          <button id="btnValidar">Validar
+          </button><br>
+
+       </fieldset>
+      </form>
+           
+    </section>
+    <footer>
+      <p>Todos los derechos reservados</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
